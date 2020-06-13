@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_news"
+        android:icon="@drawable/news"
+        android:title="Tin tức"/>
+
+    <item android:id="@+id/nav_stadium"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Tìm sân"/>
+
+    <item android:id="@+id/nav_game"
+        android:icon="@drawable/icon_game"
+        android:title="Tìm đối"/>
+
+    <item android:id="@+id/nav_club"
+        android:icon="@drawable/icon_club"
+        android:title="Câu lạc bộ"/>
+
+    <item android:id="@+id/nav_account"
+        android:icon="@drawable/account"
+        android:title="Tài khoản"/>
+</menu>

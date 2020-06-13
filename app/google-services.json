@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "328587499575",
+    "firebase_url": "https://mobilesporta-5bb33.firebaseio.com",
+    "project_id": "mobilesporta-5bb33",
+    "storage_bucket": "mobilesporta-5bb33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328587499575:android:981240156737067a2987b2",
+        "android_client_info": {
+          "package_name": "com.example.mobilesporta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328587499575-v48pf7ie4be3evjjbqk5pn1qs5v0gtc1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mobilesporta",
+            "certificate_hash": "61fbaf2ce843d0e09270088372cee0fca5b590d4"
+          }
+        },
+        {
+          "client_id": "328587499575-vg7lh3mhqs7bd8c93mgkep18ubr6hl5s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mobilesporta",
+            "certificate_hash": "23fb9ff06752aefc9415c5598a8fc32921c07b19"
+          }
+        },
+        {
+          "client_id": "328587499575-p8qkluhno0nai83eukm6u5rurhl6qv64.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuZT_FuVVZAnKbRdAXFETYD7vOgn_u6_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "328587499575-p8qkluhno0nai83eukm6u5rurhl6qv64.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

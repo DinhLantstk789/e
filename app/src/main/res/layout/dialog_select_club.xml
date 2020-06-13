@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Chọn đội tham gia"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:layout_weight="1"
+        android:background="#FF9800"/>
+    <ListView
+        android:id="@+id/lv_select_club"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Chọn"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:background="@drawable/bgbtnloginlogout"/>
+    </LinearLayout>
+</LinearLayout>

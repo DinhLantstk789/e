@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.game.FootballMatchCreateNew"
+    android:orientation="vertical"
+    android:weightSum="14">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:background="@drawable/bg_toolbar">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <Button
+                    android:id="@+id/btn_back_create_match"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_back"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/select_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:text="TẠO GAME"
+            android:textColor="#FF9800"
+            android:gravity="center"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="5dp">
+        <TextView
+            android:id="@+id/txtMatchCreateAct_Stadium"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:text="Sân bóng"
+            android:layout_weight="4"
+            android:textColor="#000"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/edtMatchCreateAct_Stadium"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:text="Chọn sân"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="Đội nhà"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:gravity="center_vertical"/>
+        <Spinner
+            android:id="@+id/tv_select_club"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:textSize="20sp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Ngày"
+            android:textSize="20sp"
+            android:layout_weight="4"
+            android:textColor="#000"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/edtMatchCreateAct_Date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:textColor="#000"
+            android:gravity="center_vertical"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="5dp">
+        <TextView
+            android:id="@+id/txtMatchCreateAct_Time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Thời gian"
+            android:textSize="20sp"
+            android:layout_weight="4"
+            android:textColor="#000"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/edtMatchCreateAct_Time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:textColor="#000"
+            android:gravity="center_vertical"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="5dp">
+        <TextView
+            android:id="@+id/txtMatchCreateAct_TimeAmount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Thời lượng"
+            android:textSize="20sp"
+            android:layout_weight="4"
+            android:textColor="#000"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/edtMatchCreateAct_TimeAmount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:textColor="#000"
+            android:gravity="center_vertical"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="5dp">
+        <TextView
+            android:id="@+id/txtMatchCreateAct_PhoneNumber"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Số điện thoại"
+            android:textSize="20sp"
+            android:layout_weight="4"
+            android:textColor="#000"
+            android:gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/edtMatchCreateAct_PhoneNumber"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:layout_weight="7"
+            android:textColor="#000"
+            android:inputType="phone"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtMatchCreateAct_Description"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Ghi chú"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        android:textColor="#000"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"/>
+
+    <EditText
+        android:id="@+id/edtMatchCreateAct_Description"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="20sp"
+        android:layout_weight="4"
+        android:textColor="#000"
+        android:gravity="top"
+        android:hint="Sân 5, 7 hay 11. Tỉ lệ hay ghi chú khác..."
+        android:padding="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnMatchCreateAct_Save"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Tạo kèo"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:background="@drawable/bgbtnloginlogout"/>
+    </LinearLayout>
+
+</LinearLayout>

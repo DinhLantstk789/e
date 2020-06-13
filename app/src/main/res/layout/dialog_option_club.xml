@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_edit_info_club"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text=" Sửa"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:padding="5dp"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/ic_edit_info_club"/>
+    <Button
+        android:id="@+id/btn_delete_club"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text=" Xóa"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:drawableLeft="@drawable/ic_delete_club"
+        android:padding="5dp"
+        android:textSize="18sp"/>
+</LinearLayout>

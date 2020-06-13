@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".activity.club.ClubProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/ic_back"/>
+        <Button
+            android:id="@+id/btn_select_option_club"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_option_club"/>
+
+        <Button
+            android:id="@+id/btn_add_bachground"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="130dp"
+            android:layout_alignRight="@+id/imgClubProfileAct_ClubBackground"
+            android:background="@drawable/add_images"/>
+
+        <ImageView
+            android:id="@+id/imgClubProfileAct_ClubBackground"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="fitXY"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvClubProfileAct_Club"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="80dp"
+            app:cardCornerRadius="80dp"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/imgClubProfileAct_ClubImage"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:scaleType="fitXY"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/btn_add_avatar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/cvClubProfileAct_Club"
+            android:layout_below="@+id/cvClubProfileAct_Club"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginTop="-40dp"
+            android:background="@drawable/add_images"/>
+
+        <TextView
+            android:id="@+id/txtClubProfile_ClubName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="24dp"
+            android:textColor="#000"
+            android:text="FC"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/cvClubProfileAct_Club"/>
+
+        <TextView
+            android:id="@+id/txtClubProfile_ClubSlogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtClubProfile_ClubName"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:orientation="vertical"
+        app:tabMode="fixed">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/ClubProfieAct_TabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/ClubProfieAct_ClubDescriptionTab"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Mô tả"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/ClubProfieAct_ClubHistoryTab"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Lịch sử"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/ClubProfieAct_ClubCommentTab"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Nhận xét"/>
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/ClubProfieAct_ViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.viewpager.widget.ViewPager>
+
+    </LinearLayout>
+
+
+</LinearLayout>

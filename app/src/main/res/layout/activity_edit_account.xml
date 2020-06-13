@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.account.EditAccount"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Tên"
+            android:textSize="24dp"
+            android:drawableLeft="@drawable/edit_name"
+            android:textColor="#0B0B0B"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Email"
+            android:textSize="24dp"
+            android:drawableLeft="@drawable/edit_email"
+            android:textColor="#0B0B0B"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Mật khẩu"
+            android:textSize="24dp"
+            android:drawableLeft="@drawable/edit_pass"
+            android:textColor="#0B0B0B"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/edit_pass"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Xác nhận Mật khẩu"
+            android:textSize="24dp"
+            android:drawableLeft="@drawable/edit_pass"
+            android:textColor="#0B0B0B"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/edit_confirm_pass"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Cập nhật"
+            android:textSize="24dp"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:background="@drawable/bgbtnloginlogout"/>
+    </LinearLayout>
+
+
+</LinearLayout>

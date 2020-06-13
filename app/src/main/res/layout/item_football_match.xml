@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvItemFootballMatch_HomeClub"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgItemFootballMatch_HomeClubAvt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/news_hightlight"
+            android:scaleType="fitXY"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtItemFootballMatch_HomeClubName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Arsenal FC"
+        android:textSize="16dp"
+        android:textColor="#000"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvItemFootballMatch_HomeClub" />
+
+    <TextView
+        android:id="@+id/txtItemFootballMatch_Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15:00"
+        android:textSize="16dp"
+        android:textColor="#032B65"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintBottom_toTopOf="@id/imgItemFootballMatch_Icon_VS"
+        app:layout_constraintLeft_toRightOf="@id/cvItemFootballMatch_HomeClub"
+        app:layout_constraintRight_toLeftOf="@id/cvItemFootballMatch_AwayClub" />
+
+    <TextView
+        android:id="@+id/txtItemFootballMatch_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020-14-02"
+        android:textSize="16dp"
+        android:textColor="#032B65"
+        app:layout_constraintBottom_toTopOf="@id/imgItemFootballMatch_Icon_VS"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintLeft_toRightOf="@id/cvItemFootballMatch_HomeClub"
+        app:layout_constraintRight_toLeftOf="@id/cvItemFootballMatch_AwayClub" />
+
+    <TextView
+        android:id="@+id/txtItemFootballMatch_Stadium"
+        android:layout_height="wrap_content"
+        android:layout_width="130dp"
+        android:gravity="center"
+        android:text="Sân bóng ngoại ngữ - ĐHQG"
+        android:textSize="16dp"
+        android:textColor="#032B65"
+        app:layout_constraintLeft_toRightOf="@id/cvItemFootballMatch_HomeClub"
+        app:layout_constraintRight_toLeftOf="@id/cvItemFootballMatch_AwayClub"
+        app:layout_constraintTop_toBottomOf="@id/imgItemFootballMatch_Icon_VS" />
+
+    <TextView
+        android:id="@+id/imgItemFootballMatch_Icon_VS"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:text="VS"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textColor="#FF9800"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintLeft_toRightOf="@id/cvItemFootballMatch_HomeClub"
+        app:layout_constraintRight_toLeftOf="@id/cvItemFootballMatch_AwayClub"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtItemFootballMatch_AwayClubName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ha Nội FC"
+        android:textSize="16dp"
+        android:textColor="#000"
+        app:layout_constraintHorizontal_bias="0.90"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvItemFootballMatch_AwayClub" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvItemFootballMatch_AwayClub"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgItemFootballMatch_AwayClubAvt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/news_hightlight"
+            android:scaleType="fitXY"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

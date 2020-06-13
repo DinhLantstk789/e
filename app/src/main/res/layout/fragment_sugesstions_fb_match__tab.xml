@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".fragment.game.SugesstionsFbMatch_TabFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvSugesstion_Match_Fragment_FilterDateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Ngày "
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtSugesstion_Match_Fragment_FilterDateSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:text="Chọn ngày"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvSugesstion_Match_Fragment_FilterDateTitle"
+            app:layout_constraintStart_toEndOf="@+id/tvSugesstion_Match_Fragment_FilterDateTitle"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvSugesstion_Match_Fragment_FilterTimeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:text="Thời gian"
+            app:layout_constraintLeft_toRightOf="@id/tvSugesstion_Match_Fragment_FilterDateTitle"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtSugesstion_Match_Fragment_FilterTimeSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:text="Từ"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvSugesstion_Match_Fragment_FilterTimeTitle"
+            app:layout_constraintStart_toEndOf="@+id/tvSugesstion_Match_Fragment_FilterTimeTitle"
+            app:layout_constraintTop_toTopOf="parent" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/txtSugesstion_Match_Fragment_FilterTimeSearchTo"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="60dp"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            android:text="Đến"-->
+<!--            android:textSize="14sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/tvSugesstion_Match_Fragment_FilterTimeTitle"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/tvSugesstion_Match_Fragment_FilterTimeTitle"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Tìm"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"/>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/Sugesstion_Match_Fragment_listMatch_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <ListView
+            android:id="@+id/lvSugesstion_Match_Fragment_ListMatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    -->
+</LinearLayout>

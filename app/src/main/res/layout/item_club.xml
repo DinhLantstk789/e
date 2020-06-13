@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@drawable/item_club_style">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/cv_img_club"
+        app:cardCornerRadius="10dp">
+        <ImageView
+            android:id="@+id/imgItemClub_ClubImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="fitXY"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_toRightOf="@+id/cv_img_club"
+        android:id="@+id/txtItemClub_ClubName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Arsenal FC"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/cv_img_club"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/cv_img_club"
+        android:id="@+id/txtItemClub_slogan"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:text="Arsenal FC"
+        android:layout_below="@+id/txtItemClub_ClubName"
+        android:textColor="#000"/>
+
+</RelativeLayout>

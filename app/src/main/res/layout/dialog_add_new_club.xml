@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="Tạo CLB mới"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#ED1C24"
+        android:background="#FF9800"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên"
+            android:textAllCaps="false"
+            android:textColor="#000"/>
+        <EditText
+            android:id="@+id/edtDialogAddNewClub_ClubName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Slogan"
+            android:textAllCaps="false"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/edtDialogAddNewClub_ClubSlogan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mô tả"
+            android:textAllCaps="false"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/tvDialogAddNewClub_ClubDescription"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/btnDialogAddNewClub_AddNew"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bgbtnloginlogout"
+            android:gravity="center"
+            android:text="Tạo mới"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="#FFF"/>
+    </LinearLayout>
+</LinearLayout>
